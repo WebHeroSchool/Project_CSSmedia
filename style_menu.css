@@ -1,0 +1,44 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background: #9373E2;
+  height: 40px;
+}
+
+.nav a {
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+}
+
+.burger {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 5px;
+  border-radius: 4px;
+}
+
+.menu {
+  width: 45px;
+  display: none;
+}
+
+.nav a:hover {
+  background:#C8B9EE;
+}
+
+@media all and (max-width: 500px) {
+  .nav a {
+    display: none;
+  }
+  
+  .menu {
+    display: block;
+    position: absolute;
+    left: 20px;
+  }
+}
